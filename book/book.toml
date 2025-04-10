@@ -1,7 +1,6 @@
 [book]
 authors = ["Gábor Szabó"]
 language = "en"
-multilingual = false
 src = "pages"
 title = "The wrap by examples book"
 description = ""
