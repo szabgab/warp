@@ -36,5 +36,13 @@
   - [Custom HTTP Methods](./custom-methods.md)
 
 - [Other](./other.md)
+  - [Compression](./compression.md)
+  - [Dyn Reply](./dyn-reply.md)
+  - [Multipart](./multipart.md)
+  - [Query string](./query-string.md)
+  - [Returning](./returning.md)
+  - [Stream](./stream.md)
+  - [Unix socket](./unix-socket.md)
+  - [Wrapping](./wrapping.md)
 
 
