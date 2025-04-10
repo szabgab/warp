@@ -1,6 +1,8 @@
-
 /target
 **/*.rs.bk
 Cargo.lock
 .idea/
 warp.iml
+*.swp
+*.bak
+/book/book
