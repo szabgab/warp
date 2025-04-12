@@ -1,6 +1,6 @@
 # Summary
 
-- [wrap](./index.md)
+- [warp](./index.md)
 - [Examples](./examples.md)
   - [Hello World](./hello-world.md)
   - [Routing](./routing.md)
@@ -10,29 +10,29 @@
   - [Futures](./futures.md)
   - [todos](./todos.md)
 
-## Serving HTML and Other Files
+- [Serving HTML and Other Files]()
   - [file](./file.md)
   - [dir](./dir.md)
   - [Handlebars template](./handlebars-template.md)
 
-## Websockets
+- [Websockets]()
   - [Websockets](./websockets.md)
   - [Websockets chat](./websockets-chat.md)
 
-## Server-Side Events
+- [Server-Side Events]()
   - [SSE](./sse.md)
   - [SSE Chat](./sse-chat.md)
 
-## TLS
+- [TLS]()
   - [TLS](./tls.md)
 
-## Autoreloading
+- [Autoreloading]()
   - [Autoreload](./autoreload.md)
 
-## Debugging
+- [Debugging]()
   - [Tracing](./tracing.md)
 
-## Custom HTTP Methods
+- [Custom HTTP Methods]()
   - [Custom HTTP Methods](./custom-methods.md)
 
 - [Other](./other.md)

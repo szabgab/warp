@@ -2,7 +2,7 @@
 authors = ["Gábor Szabó"]
 language = "en"
 src = "pages"
-title = "The wrap by examples book"
+title = "The warp by examples book"
 description = ""
 
 # Add github icon to the menu
@@ -10,8 +10,8 @@ description = ""
 git-repository-icon = "fa-github"
 #git-repository-url = "https://github.com/seanmonstar/warp"
 #edit-url-template = "https://github.com/seanmonstar/warp/edit/main/book/{path}"
-git-repository-url = "https://github.com/szabgab/wrap/tree/book"
-edit-url-template = "https://github.com/szabgab/wrap/blob/book/book/{path}"
+git-repository-url = "https://github.com/szabgab/warp/tree/book"
+edit-url-template = "https://github.com/szabgab/warp/blob/book/book/{path}"
 
 # Embedding and the footer
 [preprocessor.embedify]
