@@ -3,6 +3,7 @@
 - [warp](./index.md)
 - [Examples](./examples.md)
   - [Hello World](./hello.md)
+  - [Hello World using functions](./hello-using-function.md)
   - [Routing](./routing.md)
   - [Body](./body.md)
   - [Headers](./headers.md)
