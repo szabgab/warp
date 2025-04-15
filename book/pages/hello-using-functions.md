@@ -4,7 +4,7 @@
 {{#include ../../examples/hello_using_functions.rs }}
 ```
 
-In this example we have a function called `setup_routes` that create all the mappings between URL pathes and requst methods (such as `GET` and `POST`) on one hand and function that will fulfill that request on the other hand. In this first example we have only one route that deals with the empty path (or `/` if you wish) as defined using the `warp::path!()` macro **and** the `GET` request method as defined by the `warp::get()` function call.
+In this example we have a function called `setup_routes` that creates all the mappings between URL pathes and requst methods (such as `GET` and `POST`) on one hand and functions that will fulfill those requests on the other hand. In this first example we have only one route that deals with the empty path (or `/` if you wish) as defined using the `warp::path!()` macro **and** the `GET` request method as defined by the `warp::get()` function call.
 
 This request is mapped to the arbitrarily named `say_hello` function that will return some HTML using the `warp::reply::html` function call.
 
