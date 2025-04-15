@@ -54,3 +54,18 @@ HTTP method not allowed
 ```
 
 
+## Testing
+
+The second part of the file is the test. It tests the application through the route-handler (the Filter in warp terms)
+so it can test everything besides the web-server itself.
+
+There are 3 test-cases. The first one checking the happy path, when the user accesses the main page with a `GET` request.
+The other two checks the two other requests that return various error status codes. It might be strange at first to test
+invalid requests, but even in a real-world application we'd want to make sure that invalid requests show the expected error
+message and not some garbage or some internal information. So it is a good practice to have tests for some invalid requests.
+
+We can run the tests by running the following command:
+
+```
+cargo test --example hello_using_functions
+```

@@ -37,5 +37,41 @@ mod test_hello_using_functions {
         assert_eq!(response.status(), StatusCode::OK);
         assert_eq!(response.body(), "Hello, <b>World</b>!");
     }
+
+    #[tokio::test]
+    async fn test_other_path() {
+        use super::setup_routes;
+        use warp::test::request;
+        use warp::http::StatusCode;
+
+        let routes = setup_routes();
     
+        let response = request()
+            .method("GET")
+            .path("/hi")
+            .reply(&routes)
+            .await;
+    
+        assert_eq!(response.status(), StatusCode::NOT_FOUND);
+        assert_eq!(response.body(), "");
+    }
+ 
+    #[tokio::test]
+    async fn test_post_method() {
+        use super::setup_routes;
+        use warp::test::request;
+        use warp::http::StatusCode;
+
+        let routes = setup_routes();
+    
+        let response = request()
+            .method("POST")
+            .path("/")
+            .reply(&routes)
+            .await;
+    
+        assert_eq!(response.status(), StatusCode::METHOD_NOT_ALLOWED);
+        assert_eq!(response.body(), "HTTP method not allowed");
+    }
+
 }
