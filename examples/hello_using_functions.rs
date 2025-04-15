@@ -19,6 +19,7 @@ pub async fn say_hello() -> Result<impl warp::Reply, Infallible> {
     Ok(warp::reply::html("Hello, <b>World</b>!"))
 }
 
+#[cfg(test)]
 mod test_hello_using_functions {
     #[tokio::test]
     async fn test_hello() {
