@@ -19,3 +19,23 @@ pub async fn say_hello() -> Result<impl warp::Reply, Infallible> {
     Ok(warp::reply::html("Hello, <b>World</b>!"))
 }
 
+mod test_hello_using_functions {
+    #[tokio::test]
+    async fn test_hello() {
+        use super::setup_routes;
+        use warp::test::request;
+        use warp::http::StatusCode;
+
+        let routes = setup_routes();
+    
+        let response = request()
+            .method("GET")
+            .path("/")
+            .reply(&routes)
+            .await;
+    
+        assert_eq!(response.status(), StatusCode::OK);
+        assert_eq!(response.body(), "Hello, <b>World</b>!");
+    }
+    
+}
