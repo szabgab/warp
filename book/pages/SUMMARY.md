@@ -5,6 +5,7 @@
   - [Hello](./hello.md)
   - [Hello using functions](./hello-using-functions.md)
   - [Hello using modules](./hello-using-modules.md)
+  - [Hello setting content type with_heather](./hello-with-header.md)
   - [Routing](./routing.md)
   - [Body](./body.md)
   - [Headers](./headers.md)

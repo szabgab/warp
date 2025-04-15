@@ -26,6 +26,7 @@ You can run other examples with `cargo run --example [example name]`:
 - [`hello.rs`](./hello.md) - Just a basic "Hello World" API
 - [Hello World using functions](./hello-using-functions.md)
 - [Hello World using modules](./hello-using-modules.md)
+- [Hello setting content type with_heather](./hello-with-header.md)
 - [`routing.rs`](./routing.md) - Builds up a more complex set of routes and shows how to combine filters
 - [`body.rs`](./body.bd) - What's a good API without parsing data from the request body?
 - [`headers.rs`](./headers.md) - Parsing data from the request headers
